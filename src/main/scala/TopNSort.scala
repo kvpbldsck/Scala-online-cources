@@ -1,7 +1,5 @@
 package org.kvpbldsck
 
-import scala.:+
-
 def insert[T](accumulator: Vector[T], item: T, popLast: Boolean = false)(implicit ordering: Ordering[T]) = {
   val insertAtIndex = accumulator.indexWhere { accItem => ordering.gt(accItem, item) }
   if insertAtIndex == -1 & !popLast then accumulator.appended(item)
