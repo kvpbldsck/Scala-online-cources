@@ -18,7 +18,7 @@ def topNSort[T](vector: Vector[T], n: Int)(implicit ordering: Ordering[T]) = {
   }
 }
 
-implicit val intOrdering: Ordering[Int] = Ordering.Int
+//implicit val intOrdering: Ordering[Int] = Ordering.Int
 
 @main def testTopNSort(): Unit =
   val arr = Vector[Int](1, 6, 3, 9, 4, 2, 1, 0)
